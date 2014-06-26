@@ -21,4 +21,5 @@
     CCLOG(@"Something collided with a seal!");
 
 }
+
 @end
