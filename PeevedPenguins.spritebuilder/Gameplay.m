@@ -21,7 +21,7 @@
     CCPhysicsJoint *_penguinCatapultJoint;
     CCAction *_followPenguin;
 }
-static const float MIN_SPEED = 5.f;
+
 - (void)didLoadFromCCB {
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
@@ -38,6 +38,7 @@ static const float MIN_SPEED = 5.f;
 
 - (void)update:(CCTime)delta
 {
+    static const float MIN_SPEED = 5.f;
     if (_currentPenguin.launched) {
            // if speed is below minimum speed, assume this attempt is over
         if (ccpLength(_currentPenguin.physicsBody.velocity) < MIN_SPEED){
