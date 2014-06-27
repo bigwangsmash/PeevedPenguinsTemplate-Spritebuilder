@@ -19,10 +19,10 @@
     CCPhysicsJoint *_mouseJoint;
     Penguin *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
-    static const float MIN_SPEED = 5.f;
+    
     CCAction *_followPenguin;
 }
-
+static const float MIN_SPEED = 5.f;
 - (void)didLoadFromCCB {
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
