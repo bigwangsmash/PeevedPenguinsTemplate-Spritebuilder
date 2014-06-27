@@ -10,7 +10,6 @@
 #import "CCPhysics+ObjectiveChipmunk.h"
 #import "Penguin.h"
 @implementation Gameplay {
-    static const float MIN_SPEED = 5.f;
     CCPhysicsNode *_physicsNode;
     CCNode *_catapultArm;
     CCNode *_levelNode;
